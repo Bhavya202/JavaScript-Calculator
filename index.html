@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interactive WebPage</title>
+  </head>
+  <body style="background-color: cyan;">
+    <center>
+      <form name="myForm">
+<br><br><label for="fst">Enter Your First Number : </label><br><br>
+        <input type="text" name="fst"><br><br>
+        <label for="snd">Enter Your Second Number : </label><br><br>
+        <input type="text" name="snd"><br><br>
+
+        <input type="button" name="Add" value="Add" onclick="add()">
+        <input type="button" name="Subtract" value="Subtract" onclick="subtract()">
+        <input type="button" name="Multiply" value="Multiply" onclick="multiply()">
+        <input type="button" name="Divide" value="Divide" onclick="divide()"><br><br>
+
+        <label for="result">Result Of Your Numbers : </label><br><br>
+        <input type="text" name="result"><br><br>
+
+        <input type="reset" name="reset" value="Reset" style="background-color: orange; border: 2px solid maroon;">
+      </form>
+    </center>
+
+    <script type="text/javascript">
+      function add(){
+        fst = parseInt(myForm.fst.value);
+        snd = parseInt(myForm.snd.value);
+        result = fst+snd;
+        myForm.result.value = result;
+      }
+
+      function subtract(){
+        fst = parseInt(myForm.fst.value);
+        snd = parseInt(myForm.snd.value);
+        result = fst-snd;
+        myForm.result.value = result;
+      }
+
+      function multiply(){
+        fst = parseInt(myForm.fst.value);
+        snd = parseInt(myForm.snd.value);
+        result = fst*snd;
+        myForm.result.value = result;
+      }
+      function divide(){
+        fst = parseInt(myForm.fst.value);
+        snd = parseInt(myForm.snd.value);
+        result = fst/snd;
+        myForm.result.value = result;
+      }
+    </script>
+  </body>
+</html>
